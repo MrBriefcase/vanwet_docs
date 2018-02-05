@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Workflow</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link rel="stylesheet" type="text/css" href="./styling/workflow_style.css"/>
+    </head>
+    
+    <body>
+        <article class="article">
+            <!------------------------
+    
+                    TOP BAR
+    
+            ------------------------->
+            <div class="logomenu">
+                <a href="./home_page.html"><img src="./images/vanwetlogo.png" alt="VAN WET" width="150"  style="padding-top: 80px; padding-left: 50px;
+                padding-bottom: 50px;"/></a>
+                
+                <!----- 
+                        HAMBURGER MENU
+                -------->
+                
+                <div id="mySidenav" class="sidenav">
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <a href="./about_page.html" style="margin-top: 50pt;">About</a>
+                    <a href="./works_page.html">Works</a>
+                    <a href="./prices_page.html">Price</a>
+                    <a href="./workflow_page.html">Workflow</a>
+                    <a href="./contacts_page.html">Contact</a>
+                </div>
+                
+                <a id="nav-toggle" onclick="openNav()" class="hamburger"/>
+                    <span></span>
+                </a>
+                
+                <!--<img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px; font-size: 30px; cursor: pointer;" onclick="openNav()"/>-->
+                
+                <!--<a href="./dropdownmenu.html"><img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px;"/></a>-->
+            </div>
+            
+            <div>
+                <div id="workflowleft">
+                    <div id="workflow">
+                        <p>
+                            Workflow
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="stepsright">
+                    <div>
+                        <div id="stepone">
+                            <p>
+                                Step 1 &nbsp;<span>Hearing</span>
+                            </p>
+                            
+                            <p id="stepdescription">
+                                We always begin by listening to your ideas, usually in person. All ideas are drawn out.
+                            </p>
+                        </div>
+                        <div id="imgright">
+                            <img src="./images/stepone_pic.jpg" alt="steps" id="stepimages"/>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div id="steptwo">
+                            <p>
+                                Step 2 &nbsp;<span>Proposal</span>
+                            </p>
+                            
+                            <p id="stepdescription">
+                                We give you quick prototypes and rough designs of your potential website.
+                            </p>
+                        </div>
+                        <div id="imgright">
+                            <img src="./images/steptwo_pic.jpg" alt="steps" id="stepimages"/>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div id="stepthree">
+                            <p>
+                                Step 3 &nbsp;<span>Development</span>
+                            </p>
+                            
+                            <p id="stepdescription">
+                                After choosing a design, we implement it through the creation of all needed assets.
+                            </p>
+                        </div>
+                        <div id="imgright">
+                            <img src="./images/stepthree_pic.jpg" alt="steps" id="stepimages"/>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div id="stepfour">
+                            <p>
+                                Step 4 &nbsp;<span>Prototype</span>
+                            </p>
+                            
+                            <p id="stepdescription">
+                                After gathering and creating all assets we create a working version of your website.
+                            </p>
+                        </div>
+                        <div id="imgright">
+                            <img src="./images/stepfour_pic.jpg" alt="steps" id="stepimages"/>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div id="stepfive">
+                            <p>
+                                Step 5 &nbsp;<span>Review &amp; Launch</span>
+                            </p>
+                            
+                            <p id="stepdescription">
+                                We go over changes before finalization.
+                            </p>
+                        </div>
+                        <div id="imgright">
+                            <img src="./images/stepfive_pic.jpg" alt="steps" id="stepimages" style="height: 199px;"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <footer class="fontfooter">
+            <p class="address">
+                VAN WET DESIGN<br/>
+                3700 Willingdon Ave, Burnaby, BC V5G 3H2<br/><br/>
+                © 2016 VAN WET DESIGN. All rights reserved.
+            </p>
+            
+            <aside>
+                <a href="https://www.facebook.com/"><img src="./images/facebook-logo.png" alt="facebook"></a>
+                
+                <a href="https://twitter.com/?lang=en"><img src="./images/twitter-logo.png" alt="twitter"></a>
+                
+                <a href="https://www.instagram.com/?hl=en"><img src="./images/instagram-logo.png" alt="instagram"></a>
+                
+                <a href="https://www.linkedin.com/uas/login"><img src="./images/linkedin-logo.png" alt="linkedin"></a>
+            </aside>
+        </footer>
+        
+        <!--- 
+
+            SCRIPT FOR HAMBURGER MENU
+
+        ------>
+        
+        <script>
+            var state = true;
+            
+            function openNav() {
+               if (state) {
+                   document.getElementById("mySidenav").style.width = "300px";
+                   state = false;
+               } else {
+                   document.getElementById("mySidenav").style.width = "0";
+                   state = true;
+               }
+            }
+
+            /****** USELESS NOW 
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            
+            *******/
+            
+            document.querySelector( "#nav-toggle" )
+            .addEventListener( "click", function() {
+                this.classList.toggle( "active" );
+            });
+            
+        </script>
+    </body>
+</html>

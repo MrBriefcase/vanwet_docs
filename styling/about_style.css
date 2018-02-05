@@ -1,0 +1,437 @@
+/*******************************
+
+        SATOKO'S ADDITION (please show where you made changes next time so that I can find the style changes quicker and work faster!!! Thanks! -Daren)
+
+*******************************/
+
+@font-face {
+    font-family:'ave';
+    src: url('../fonts/AvenirLTStd-Light.otf');
+}
+
+@font-face {
+    font-family:'avel';
+    src: url('../fonts/AvenirNext-UltraLight.ttf');
+}
+
+.article {
+    font-family:"ave";
+	color: white;
+	text-decoration:none;
+	letter-spacing: 1px;
+    margin-top: -18px;
+    font-size: 15pt;
+}
+
+.fontfooter {font-family:"ave";
+	color: black;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+footer > .address {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+.pt {
+    font-size: 25pt;
+    line-height: 40px;
+}
+
+/********************
+
+        END OF SATOKO'S ADDITION
+
+        Note changes to:
+            logomenu
+            footer
+            footer > aside
+
+*********************/
+
+body {
+    margin: 0 0 0 0;
+}
+
+div.logomenu {
+    float: justify;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 140px;
+}
+
+footer > aside {
+    float: right;
+    padding-top: 40pt;
+    padding-right: 40pt;
+}
+
+div.aboutcard {
+    position: relative;
+    padding-top: 400px;
+    
+    /*background-image: url("../images/van_placeholder.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;*/
+    
+    background-color: #6eb3cf;
+}
+
+#aboutpara {
+    position: relative;
+    
+    margin-top: -323px;
+    margin-left: 30pt;
+    font-size: 56pt;
+    color: white;
+}
+
+#firstpara {
+    position: relative;
+    
+    margin-top: -155pt;
+    margin-right: 90pt;
+    margin-left: 275pt;
+    color: white;
+    line-height: 30px;
+}
+
+#secondtop {
+    position: relative;
+    float: justify;
+    margin-top: -20px;
+}
+
+#imageone {
+    position: relative;
+    
+    float: left;
+    width: 33%;
+    height: 100%;
+    
+    padding-top: 125pt;
+    padding-bottom: 125pt;
+    
+    background-color: #949494;
+    background-image: url("../images/daren.jpg");
+    background-position: 35% 83%;
+    background-size: 664px;
+}
+
+#imagetwo {
+    position: relative;
+    
+    float: left;
+    width: 33%;
+    height: 100%;
+    
+    padding-top: 125pt;
+    padding-bottom: 125pt;
+    
+    background-color: #c0b1a8;
+}
+
+#secondpara {
+    position: absolute;
+    float: left;
+    font-family: 'avel';
+    
+    padding-left: 19pt;
+    margin-top: -109pt;
+    padding-right: 15pt;
+}
+
+#secondpara2 {
+    position: absolute;
+    float: left;
+    text-align: right;
+    clear: both;
+    font-family: 'avel';
+    
+    padding-left: 19pt;
+    /*margin-top: -109pt;*/
+    padding-right: 15pt;
+}
+
+#imagethree {
+    position: relative;
+    
+    float: right;
+    width: 34%;
+    height: 100%;
+    
+    padding-top: 125pt;
+    padding-bottom: 125pt;
+    
+    background-color: #a4a4a4;
+    background-image: url("../images/satoko.jpg");
+    background-position: 55% 67%;
+}
+
+/**********************
+
+    HAMBURGER SIDEBAR
+
+**********************/
+
+#mySidenav {
+    opacity: 0.75;
+}
+
+.sidenav {
+    height: 845px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: -89px;
+    right: 0;
+    background-color: #ededed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 231px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #8e8d8d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav a {
+    margin-bottom: 30pt;
+    font-size: 26pt;
+    text-align: right;
+    margin-right: 30pt;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* satoko media query */
+@media only screen and (max-device-width: 415px) {
+    .article {
+        line-height: 25px;
+    }
+    
+    .pt {
+        font-size: 20pt;
+        line-height: 30px;
+    }
+    
+    #aboutpara {
+        font-size: 35pt;
+        margin-top: -400px;
+    }
+    .pt {
+        font-size: 16pt;
+        line-height: 26px;
+    }
+    #para {
+        position: relative;
+        margin-top: -15pt;
+        margin-right: 30pt;
+        margin-left: 30pt;
+    }
+    #firstpara {
+        margin-left: 30pt;
+        margin-right: 30pt;
+        margin-top: -5pt;
+    }
+    #secondpara2 {
+        margin-top: 4px;
+    }
+    
+    
+    #imageone {
+        width: 100%;
+        padding-top: 70pt;
+    }
+    
+    #imagetwo {
+        width: 100%;
+        padding-bottom: 90pt;
+    }
+    
+    #imagethree {
+        width: 100%;
+        padding-top: 70pt;
+    }
+    
+    
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    div.aboutcard {
+        height: 60px; 
+        width: 100%;
+margin-bottom: 9pt;
+    }
+    
+    .sidenav {
+        top: -86px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .article {
+        line-height: 25px;
+    }
+    
+    .pt {
+        font-size: 20pt;
+        line-height: 30px;
+    }
+    
+    #aboutpara {
+        font-size: 35pt;
+        margin-top: -400px;
+    }
+    .pt {
+        font-size: 16pt;
+        line-height: 26px;
+    }
+    #para {
+        position: relative;
+        margin-top: -15pt;
+        margin-right: 30pt;
+        margin-left: 30pt;
+    }
+    #firstpara {
+        margin-left: 30pt;
+        margin-right: 30pt;
+        margin-top: -5pt;
+    }
+    #secondpara2 {
+        margin-top: 4px;
+    }
+    
+    
+    #imageone {
+        width: 100%;
+        padding-top: 70pt;
+    }
+    
+    #imagetwo {
+        width: 100%;
+        padding-bottom: 110pt;
+    }
+    
+    #imagethree {
+        width: 100%;
+        padding-top: 70pt;
+    }
+    
+    
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    div.aboutcard {
+        height: 60px; 
+        width: 100%;
+    }
+    
+    .sidenav {
+        top: -86px;
+    }
+}
+
+/************
+
+            ANIMATED HAMBURGER, FRIES, AND DRINK
+
+*************/
+
+#nav-toggle { 
+    position: absolute; 
+    right: 32pt; 
+    top: 45pt; 
+}
+#nav-toggle { 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px; 
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}

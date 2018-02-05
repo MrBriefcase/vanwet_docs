@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Us</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link rel="stylesheet" type="text/css" href="./styling/about_style.css"/>
+    </head>
+    
+    <body>
+        <article class="article">
+            <!------------------------
+    
+                    TOP BAR
+    
+            ------------------------->
+            <div class="logomenu">
+                <a href="./home_page.html"><img src="./images/vanwetlogo.png" alt="VAN WET" width="150"  style="padding-top: 80px; padding-left: 50px;
+                padding-bottom: 50px;"/></a>
+                
+                <!----- 
+                        HAMBURGER MENU
+                -------->
+                
+                <div id="mySidenav" class="sidenav">
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <a href="./about_page.html" style="margin-top: 50pt;">About</a>
+                    <a href="./works_page.html">Works</a>
+                    <a href="./prices_page.html">Price</a>
+                    <a href="./workflow_page.html">Workflow</a>
+                    <a href="./contacts_page.html">Contact</a>
+                </div>
+                
+                <a id="nav-toggle" onclick="openNav()" class="hamburger"/>
+                    <span></span>
+                </a>
+                
+                <!--<img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px; font-size: 30px; cursor: pointer;" onclick="openNav()"/>-->
+                
+                <!--<a href="./dropdownmenu.html"><img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px;"/></a>-->
+            </div>
+            
+            <div class="aboutcard">
+                <div id="aboutpara"><p>About</p></div>
+                <div id="firstpara"><p style="padding-bottom: 40pt;">
+                    <span class="pt">
+                        Our mission is to create websites for Vancouverites who have small businesses.
+                    </span>
+                    
+                    <br/><br/>
+                    
+                    <span style="font-family: 'avel';">We want to create websites, brochures, logos, and all things related to design &#40;and coding&#41;. We handle your businesses marketing perspective as well. Our coder is top-notch and our designer, cream of the crop.</span></p>
+                </div>
+            </div>
+            
+            <div id="secondtop">
+                <div id="imageone"></div>
+                <div id="imagetwo">
+                    <p id="secondpara">
+                        <span style="font-size: 18pt; font-family: 'ave';">Daren Capacio</span><br/>
+                        He enjoys playing his  guitar and facing challenges. He has 3 months of HTML coding experience.
+                    </p>
+                    <p id="secondpara2">
+                        <span style="font-size: 18pt; font-family: 'ave';">Satoko Miyajima</span><br/>
+                        Graphic and UI designer. She has a lot of experience in websites and print design. She enjoys watching movies.
+                    </p>
+                </div>
+                <div id="imagethree"></div>
+            </div>
+        </article>
+        
+        <footer class="fontfooter">
+            <p class="address">
+                VAN WET DESIGN<br/>
+                3700 Willingdon Ave, Burnaby, BC V5G 3H2<br/><br/>
+                © 2016 VAN WET DESIGN. All rights reserved.
+            </p>
+            
+            <aside>
+                <a href="https://www.facebook.com/"><img src="./images/facebook-logo.png" alt="facebook"></a>
+                
+                <a href="https://twitter.com/?lang=en"><img src="./images/twitter-logo.png" alt="twitter"></a>
+                
+                <a href="https://www.instagram.com/?hl=en"><img src="./images/instagram-logo.png" alt="instagram"></a>
+                
+                <a href="https://www.linkedin.com/uas/login"><img src="./images/linkedin-logo.png" alt="linkedin"></a>
+            </aside>
+        </footer>
+        
+        <!--- 
+
+            SCRIPT FOR HAMBURGER MENU
+
+        ------>
+        
+        <script>
+            var state = true;
+            
+            function openNav() {
+               if (state) {
+                   document.getElementById("mySidenav").style.width = "300px";
+                   state = false;
+               } else {
+                   document.getElementById("mySidenav").style.width = "0";
+                   state = true;
+               }
+            }
+
+            /****** USELESS NOW 
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            
+            *******/
+            
+            document.querySelector( "#nav-toggle" )
+            .addEventListener( "click", function() {
+                this.classList.toggle( "active" );
+            });
+            
+        </script>
+    </body>
+</html>

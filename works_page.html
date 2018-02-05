@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Our Works</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        
+        <link rel="stylesheet" type="text/css" href="./styling/works_style.css"/>
+    </head>
+    
+    <body>
+        <article class="article">
+            <!------------------------
+    
+                    TOP BAR
+    
+            ------------------------->
+            <div class="logomenu">
+                <a href="./home_page.html"><img src="./images/vanwetlogo.png" alt="VAN WET" width="150"  style="padding-top: 80px; padding-left: 50px;
+                padding-bottom: 50px;"/></a>
+                
+                <!----- 
+                        HAMBURGER MENU
+                -------->
+                
+                <div id="mySidenav" class="sidenav">
+                    <!--<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+                    <a href="./about_page.html" style="margin-top: 50pt;">About</a>
+                    <a href="./works_page.html">Works</a>
+                    <a href="./prices_page.html">Price</a>
+                    <a href="./workflow_page.html">Workflow</a>
+                    <a href="./contacts_page.html">Contact</a>
+                </div>
+                
+                <a id="nav-toggle" onclick="openNav()" class="hamburger"/>
+                    <span></span>
+                </a>
+                
+                <!--<img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px; font-size: 30px; cursor: pointer;" onclick="openNav()"/>-->
+                
+                <!--<a href="./dropdownmenu.html"><img src="./images/menu.png" alt="hamburger" style="float: right; padding-right: 30px; padding-top: 75px;"/></a>-->
+            </div>
+            
+            <div>
+                <div id="worksleft">
+                    <div id="works">
+                        <p>
+                            Works
+                        </p>
+                    </div>
+                </div>
+                
+                <div id="examplesright">
+                    <div style="background-color: #c4c4c5;">
+                        <a href="#messageScreen1"><div id="exworkone">
+                            <p style="color: white;">
+                                Blanc Cafe
+                            </p>
+                            </div></a>
+                    </div>
+                    
+                    <div style="background-color: #bbc4d6;">
+                        <a href="#messageScreen2"><div id="exworktwo">
+                            <p style="color: white;">
+                                MONOCLE
+                            </p>
+                            </div></a>
+                    </div>
+                    
+                    <div style="background-color: #aac9b1;">
+                        <a href="#messageScreen3"><div id="exworkthree">
+                            <p style="color: white;">
+                                Mirdreds
+                            </p>
+                            </div></a>
+                    </div>
+                </div>
+            </div>
+        </article>
+    
+        <div id="messageScreen1"> 
+            <a href="#" class="cancel">&times;</a> 
+            <p id="thankyou">UNDER CONTRUCTION
+            </p>
+        </div> 
+    
+        <div id="cover"> 
+        </div>
+    
+        <div id="messageScreen2"> 
+            <a href="#" class="cancel">&times;</a> 
+            <p id="thankyou">UNDER CONSTRUCTION
+            </p>
+        </div> 
+    
+        <div id="cover"> 
+        </div>
+    
+        <div id="messageScreen3"> 
+            <a href="#" class="cancel">&times;</a> 
+            <p id="thankyou">UNDER CONSTRUCTION
+            </p>
+        </div> 
+        
+        <div id="cover"> 
+        </div>
+        
+        <footer class="fontfooter">
+            <p class="address">
+                VAN WET DESIGN<br/>
+                3700 Willingdon Ave, Burnaby, BC V5G 3H2<br/><br/>
+                © 2016 VAN WET DESIGN. All rights reserved.
+            </p>
+            
+            <aside>
+                <a href="https://www.facebook.com/"><img src="./images/facebook-logo.png" alt="facebook"></a>
+                
+                <a href="https://twitter.com/?lang=en"><img src="./images/twitter-logo.png" alt="twitter"></a>
+                
+                <a href="https://www.instagram.com/?hl=en"><img src="./images/instagram-logo.png" alt="instagram"></a>
+                
+                <a href="https://www.linkedin.com/uas/login"><img src="./images/linkedin-logo.png" alt="linkedin"></a>
+            </aside>
+        </footer>
+        
+        <!--- 
+
+            SCRIPT FOR HAMBURGER MENU
+
+        ------>
+        
+        <script>
+            var state = true;
+            
+            function openNav() {
+               if (state) {
+                   document.getElementById("mySidenav").style.width = "300px";
+                   state = false;
+               } else {
+                   document.getElementById("mySidenav").style.width = "0";
+                   state = true;
+               }
+            }
+
+            /****** USELESS NOW 
+            
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+            
+            *******/
+            
+            document.querySelector( "#nav-toggle" )
+            .addEventListener( "click", function() {
+                this.classList.toggle( "active" );
+            });
+            
+        </script>
+    </body>
+</html>

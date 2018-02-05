@@ -1,0 +1,532 @@
+/*******************************
+
+        SATOKO'S ADDITION (please show where you made changes next time so that I can find the style changes quicker and work faster!!! Thanks! -Daren)
+
+*******************************/
+
+@font-face {
+    font-family:'ave';
+    src: url('../fonts/AvenirLTStd-Light.otf');
+}
+
+body {
+    margin: 0;
+}
+
+.article {
+    font-family:"ave";
+	color: white;
+	text-decoration:none;
+	letter-spacing: 1px;
+    margin-top: -18px;
+}
+
+.fontfooter {font-family:"ave";
+	color: black;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+footer > .address {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+.pt {
+    font-size: 16pt;
+}
+
+div.logomenu {
+    float: justify;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 140px;
+}
+
+footer > aside {
+    float: right;
+    padding-top: 40pt;
+    padding-right: 40pt;
+}
+
+/********************
+
+        END OF SATOKO'S ADDITION
+
+        Note changes to:
+            logomenu
+            footer
+            footer > aside ***DONE
+
+        Remove: footer > p
+
+*********************/
+
+body {
+    margin: 0 0 0 0;
+overflow-x: hidden;
+}
+
+#worksleft {
+    float: left;
+    width: 35%;
+    height: 804px;
+}
+
+#works {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 45pt;
+    
+    padding-top: 30pt;
+    padding-bottom: 30pt;
+    padding-left: 10pt;
+    
+    background-color: #6eb3cf;
+}
+
+#works > p {
+    top: 39%;
+    left: 6%;
+    position: absolute;
+}
+
+#examplesright {
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+#exworkone {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 38pt;
+    
+    padding-top: 50pt;
+    padding-bottom: 50pt;
+    padding-left: 10pt;
+    
+    background-color: #c4c4c5;
+    background-image: url("../images/blanc_cafe.jpg");
+background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 80% 40%;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#exworkone:hover {
+    /*opacity: 0.9;*/
+    background-position: 82% 42%;
+}
+
+#exworktwo {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 38pt;
+    
+    padding-top: 50pt;
+    padding-bottom: 50pt;
+    padding-left: 10pt;
+    
+    background-color: #bbc4d6;
+    background-image: url("../images/monocle.jpg");
+background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 37% 95%;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#exworktwo:hover {
+    /*opacity: 0.8;*/
+    background-position: 28% 100%;
+}
+
+#exworkthree {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 38pt;
+    
+    padding-top: 50pt;
+    padding-bottom: 50pt;
+    padding-left: 10pt;
+    
+    background-color: #aac9b1;
+    background-image: url("../images/mirdreds.jpg");
+background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 30% 30%;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#exworkthree:hover {
+    /*opacity: 0.8;*/
+    background-position: 32% 32%;
+}
+
+/***********
+            MESSAGE SCREEN (after submit)
+************/
+
+#cover { 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    background:rgba(0,0,0,0.6); 
+    z-index:5; 
+    width:100%; 
+    height:100%; 
+    display:none; 
+} 
+
+#messageScreen1 { 
+    height:600px; 
+    width:500px; 
+    margin:0 auto; 
+    position:absolute; 
+    left: 30%;
+    top: 26%;
+    z-index:10; 
+    display:none; 
+    background-color: rgb(245,245,245); 
+    /*border:5px solid #deac77;
+    border-radius:10px;*/
+    
+    
+} 
+
+#messageScreen1:target, #messageScreen1:target + #cover {
+    display:block;
+    opacity:0.7; 
+} 
+
+#messageScreen1 > p {
+    font-family:"ave";
+	color: #080707;
+    margin-top: 15pt;
+    margin-left: 10pt;
+}
+
+#messageScreen2 { 
+    height:600px; 
+    width:500px; 
+    margin:0 auto; 
+    position:absolute; 
+    left: 30%;
+    top: 26%;
+    z-index:10; 
+    display:none; 
+    background-color: rgb(245,245,245); 
+    /*border:5px solid #deac77; 
+    border-radius:10px; */
+
+} 
+
+#messageScreen2:target, #messageScreen2:target + #cover {
+    display:block;
+    opacity:0.7; 
+} 
+
+#messageScreen2 > p {
+    font-family:"ave";
+	color: #080707;
+    margin-top: 15pt;
+    margin-left: 10pt;
+}
+
+#messageScreen3 { 
+    height:600px; 
+    width:500px; 
+    margin:0 auto; 
+    position:absolute; 
+    left: 30%;
+    top: 26%;
+    z-index:10; 
+    display:none; 
+    background-color: rgb(245,245,245); 
+    /*border:5px solid #deac77; 
+    border-radius:10px; */
+
+}
+
+#messageScreen3:target, #messageScreen3:target + #cover {
+    display:block;
+    opacity:0.7; 
+} 
+
+#messageScreen3 > p {
+    font-family:"ave";
+	color: #080707;
+    margin-top: 15pt;
+    margin-left: 10pt;
+}
+
+.cancel { 
+    display:block; 
+    position:absolute; 
+    top:3px; 
+    right:2px; 
+    background:rgb(245,245,245); 
+    color:black; 
+    height:30px; 
+    width:35px; 
+    font-size:30px; 
+    text-decoration:none; 
+    text-align:center; 
+    font-weight:bold; 
+} 
+
+/**** 
+End of message screen 
+********/
+
+/**********************
+
+    HAMBURGER SIDEBAR
+
+**********************/
+
+#mySidenav {
+    opacity: 0.75;
+}
+
+.sidenav {
+    height: 884px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: -89px;
+    right: 0;
+    background-color: #ededed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 231px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #8e8d8d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav a {
+    margin-bottom: 30pt;
+    font-size: 26pt;
+    text-align: right;
+    margin-right: 30pt;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* satoko media query*/
+@media only screen and (max-device-width: 415px) {
+    #worksleft {
+        width: 100%;
+        height: 150px;
+    }
+    #works > p {
+        float: left;
+        top: 155px;
+        font-size: 35px;
+        
+    }
+    #examplesright {
+        width: 100%;
+        
+    }
+    
+    #exworkone {
+        font-size: 30pt;
+        left: 10%;
+    }
+    
+    #exworktwo {
+        font-size: 30pt;
+        left: 10%;
+    }
+    
+    #exworkthree {
+        font-size: 30pt;
+        left: 10%;
+    }
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        position: auto;
+        overflow: auto;
+        bottom: 0px; 
+        width: 100%; 
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        clear: both;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    #messageScreen1, #messageScreen2, #messageScreen3 {
+        height: 400px;
+        width: 350px;
+        left: 5%;
+        top: 26%;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #worksleft {
+        width: 100%;
+        height: 150px;
+    }
+    #works > p {
+        float: left;
+        top: 155px;
+        font-size: 35px;
+        
+    }
+    #examplesright {
+        width: 100%;
+        
+    }
+    
+    #exworkone {
+        font-size: 30pt;
+        left: 10%;
+    }
+    
+    #exworktwo {
+        font-size: 30pt;
+        left: 10%;
+    }
+    
+    #exworkthree {
+        font-size: 30pt;
+        left: 10%;
+    }
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        position: auto;
+        overflow: auto;
+        bottom: 0px; 
+        width: 100%; 
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        clear: both;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+    #messageScreen1, #messageScreen2, #messageScreen3 {
+        height: 400px;
+        width: 290px;
+        left: 5%;
+        top: 26%;
+    }
+       
+}
+
+/************
+
+            ANIMATED HAMBURGER, FRIES, AND DRINK
+
+*************/
+
+#nav-toggle { 
+    position: absolute; 
+    right: 32pt; 
+    top: 45pt; 
+}
+#nav-toggle { 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px; 
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}

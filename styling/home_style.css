@@ -1,0 +1,440 @@
+@font-face {
+    font-family:'ave';
+    src: url('../fonts/AvenirLTStd-Light.otf');
+}
+
+body {
+    margin: 0 0 0 0;
+}
+ 
+div > p {
+    margin-left: 30px;
+	padding-top: 10px;
+}
+
+.pt {
+    font-size: 20pt;
+}
+
+.article {
+    font-family:"ave";
+	color: white;
+	text-decoration:none;
+	letter-spacing: 1px;
+    margin-top: -18px;
+}
+
+.fontfooter {font-family:"ave";
+	color: black;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+div.logomenu {
+    float: justify;
+    height: 100%;
+    width: 100%;
+}
+
+div.aboutsection {
+    height: 350px;
+    width: 100%;
+}
+
+#webuild {
+    float: left;
+    font-size: 48pt;
+    height: 100%;
+    width: 35%;
+    background-color: #6eb3cf;
+	line-height: 68px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+	-webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+}
+
+#imgabout {
+    float: right;
+    background-image: url("../images/pexels-photo-137602.jpeg");
+	background-position: 100%;
+background-size: 100%;
+background-repeat: no-repeat;
+	
+	height: 100%;
+    width: 65%;
+	padding-top: 5px;
+    padding-bottom: 5px;
+}
+#works {
+    float: left;
+    width: 66%;
+    height: 100%;
+    font-size: 40pt;
+    padding-top: 55px;
+    padding-bottom: 55px;
+	background-color: rgba(126,126,174,0.5);
+	background-image: url(../images/pexels-photo-110055.jpeg);
+background-size: 100%;
+	background-position: 95% 50%;
+background-repeat: no-repeat;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+#works:hover {
+    opacity: 0.8;
+    background-position: 96% 51%;
+}
+
+#aboutus {
+    float: right;
+    width: 34%;
+    height: 100%;
+}
+
+/*#aboutus:hover {opacity: 0.8 ;}*/
+
+#bigaboutus {
+    padding-top: 25px;
+    padding-bottom: 25.5px;
+    height: 100%;
+    background-color: #deac77;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+#bigaboutus:hover {
+    opacity: 0.8 ;
+}
+
+#price {
+    padding-top: 25px;
+    padding-bottom: 25px;
+	background-image: url(../images/pexels-photo-1.jpg);
+background-repeat: no-repeat;
+	background-position: 90% 50%;
+	height: 100%;
+	
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#price:hover {
+    opacity:0.8;
+    background-position: 91% 51%;
+}
+
+#contact {
+    float: left;
+    width: 33%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-image: url(../images/pexels-photo-29557.jpg);
+background-repeat: no-repeat;
+	background-position: 35% 90%;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#contact:hover {
+    opacity: 0.8;
+    background-position: 36% 91%;
+}
+
+#workflow {
+    float: right;
+    width: 67%;
+    height: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #5fb172;
+    
+    /* Transitioning when hovered */
+    -webkit-transition: all 1s ease; 
+    -moz-transition: all 1s ease; 
+    -ms-transition: all 1s ease; 
+    transition: all 1s ease;
+}
+
+#workflow:hover {
+    opacity: 0.8 ;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 140px;
+}
+
+footer > .address {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+footer > aside {
+    float: right;
+    padding-top: 40pt;
+    padding-right: 40pt;
+}
+
+/**********************
+
+    HAMBURGER SIDEBAR
+
+**********************/
+
+#mySidenav {
+    opacity: 0.75;
+}
+
+.sidenav {
+    height: 816px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: -89px;
+    right: 0;
+    background-color: #ededed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 231px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #8e8d8d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav a {
+    margin-bottom: 30pt;
+    font-size: 26pt;
+    text-align: right;
+    margin-right: 30pt;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* satoko media query*/
+@media only screen and (max-device-width: 415px) {
+    div > p {
+        margin-top: 20px;
+    }
+ 
+    
+    #webuild {
+        width: 100%;
+        height: 200px;
+        font-size: 35pt;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+    #we build > p {
+        margin-top: 0px;
+    }
+    #imgabout {
+        width: 100%;
+        float: clear;
+        height: 200px;
+        background-position: 50% ;
+        background-size: 160%;
+        background-repeat: no-repeat;
+    }
+    
+    #stepsright {
+        width: 100%;
+        clear: both;
+    }
+    #works {
+        width: 100%;
+        height: 100px;
+        font-size: 30pt;
+        float: clear;
+        background-position: 100% 50%;
+        background-size: 250%;
+    }
+ 
+    #aboutus {
+        width: 100%;
+    }
+    #contact {
+        width: 100%;
+    }
+    #workflow {
+        width: 100%;
+    }
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    div > p {
+        margin-top: 20px;
+    }
+ 
+    
+    #webuild {
+        width: 100%;
+        height: 200px;
+        font-size: 35pt;
+        line-height: 50px;
+        padding-top: 10px;
+    }
+    #we build > p {
+        margin-top: 0px;
+    }
+    #imgabout {
+        width: 100%;
+        float: clear;
+        height: 200px;
+        background-position: 50% ;
+        background-size: 160%;
+        background-repeat: no-repeat;
+    }
+    
+    #stepsright {
+        width: 100%;
+        clear: both;
+    }
+    #works {
+        width: 100%;
+        height: 100px;
+        font-size: 30pt;
+        float: clear;
+        background-position: 100% 50%;
+        background-size: 250%;
+    }
+ 
+    #aboutus {
+        width: 100%;
+    }
+    #contact {
+        width: 100%;
+    }
+    #workflow {
+        width: 100%;
+    }
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+/************
+
+            ANIMATED HAMBURGER, FRIES, AND DRINK
+
+*************/
+
+#nav-toggle { 
+    position: absolute; 
+    right: 32pt; 
+    top: 45pt; 
+}
+#nav-toggle { 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px; 
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,405 @@
+/*******************************
+
+        SATOKO'S ADDITION (please show where you made changes next time so that I can find the style changes quicker and work faster!!! Thanks! -Daren)
+
+*******************************/
+
+@font-face {
+    font-family:'ave';
+    src: url('../fonts/AvenirLTStd-Light.otf');
+}
+
+@font-face {
+    font-family:'avel';
+    src: url('../fonts/AvenirNext-UltraLight.ttf');
+}
+
+ul {
+    font-family:"avel";
+}
+
+.article {
+    font-family:"ave";
+	color: white;
+	text-decoration:none;
+	letter-spacing: 1px;
+    margin-top: -18px;
+}
+
+.fontfooter {font-family:"ave";
+	color: black;
+	text-decoration:none;
+	letter-spacing: 1px;
+	font-size: 12pt;
+}
+
+footer > .address {
+    float: left;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+.pt {
+    font-size: 16pt;
+}
+
+div.logomenu {
+    float: justify;
+    height: 100%;
+    width: 100%;
+}
+
+footer {
+    position: relative;
+    overflow: hidden;
+    bottom: 0px;
+    width: 100%;
+    height: 140px;
+}
+
+footer > aside {
+    float: right;
+    padding-top: 40pt;
+    padding-right: 40pt;
+}
+
+/********************
+
+        END OF SATOKO'S ADDITION
+
+        Note changes to:
+            logomenu
+            footer
+                    ***DONE
+
+        Remove: footer > p
+                footer
+                logomenu
+                footer > aside
+
+*********************/
+
+body {
+    margin: 0 0 0 0;
+overflow-x: hidden;
+}
+
+#pricesleft {
+    float: left;
+    width: 35%;
+    height: 840px;
+}
+
+#prices {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 56pt;
+    
+    padding-top: 57pt;
+    padding-bottom: 57pt;
+    padding-left: 10pt;
+    
+    background-color: #828b89;
+    background-image: url("../images/pricing_image.jpg");
+background-repeat: no-repeat;
+    background-size: 1000px 1000px;
+    background-position: 0% 30%;
+}
+
+#prices > p {
+    top: 39%;
+    left: 6%;
+    position: absolute;
+}
+
+#secondright {
+    float: left;
+    width: 65%;
+    height: 100%;
+}
+
+#secondright ul {
+    font-size: 15pt;
+    margin-left: 15pt;
+}
+
+#pricingfontsize {
+    font-size: 18pt;
+}
+
+#small {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 32pt;
+    
+    /*padding-top: 50pt;*/
+    padding-bottom: 42pt;
+    padding-left: 10pt;
+    
+    background-color: #c0b1a8;
+}
+
+#small p {
+    margin-top: 25pt;
+    margin-left: 30pt;
+    margin-bottom: 0pt;
+}
+
+#middle {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 32pt;
+    
+    /*padding-top: 50pt;*/
+    padding-bottom: 42pt;
+    padding-left: 10pt;
+    
+    background-color: #6eb3cf;
+}
+
+#middle p {
+    margin-top: 25pt;
+    margin-left: 30pt;
+    margin-bottom: 0pt;
+}
+
+#high {
+    float: left;
+    width: 100%;
+    height: 100%;
+    font-size: 32pt;
+    
+    /*padding-top: 50pt;*/
+    padding-bottom: 42pt;
+    padding-left: 10pt;
+    
+    background-color: #dead77;
+}
+
+#high p {
+    margin-top: 25pt;
+    margin-left: 30pt;
+    margin-bottom: 0pt;
+}
+
+/**********************
+
+    HAMBURGER SIDEBAR
+
+**********************/
+
+#mySidenav {
+    opacity: 0.75;
+}
+
+.sidenav {
+    height: 920px;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: -89px;
+    right: 0;
+    background-color: #ededed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    margin-top: 231px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #8e8d8d;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: -35px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#mySidenav a {
+    margin-bottom: 30pt;
+    font-size: 26pt;
+    text-align: right;
+    margin-right: 30pt;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* satoko media query*/
+@media only screen and (max-device-width: 415px) {
+    #pricesleft {
+        width: 100%;
+        height: 150px;
+    }
+    #secondright {
+        width: 100%;
+    }
+    
+    #prices > p {
+        float: left;
+        top: 160px;
+        font-size: 35px;
+    }
+    
+    #small {
+        font-size: 25pt;
+    }
+    #small p {
+        margin-left: 20px;
+        
+    }
+    #middle {
+        font-size: 25pt;
+    }
+    #middle p {
+        margin-left: 20px;
+    }
+    #high {
+        font-size: 25pt;
+    }
+    #high p {
+        margin-left: 20px;
+    }
+    
+    #secondright ul {
+        margin-left: 0;
+    }
+    
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 415px) {
+    #pricesleft {
+        width: 100%;
+        height: 150px;
+    }
+    #secondright {
+        width: 100%;
+    }
+    
+    #prices > p {
+        float: left;
+        top: 160px;
+        font-size: 35px;
+    }
+    
+    #small {
+        font-size: 25pt;
+    }
+    #small p {
+        margin-left: 20px;
+        
+    }
+    #middle {
+        font-size: 25pt;
+    }
+    #middle p {
+        margin-left: 20px;
+    }
+    #high {
+        font-size: 25pt;
+    }
+    #high p {
+        margin-left: 20px;
+    }
+    
+    #secondright ul {
+        margin-left: 0;
+    }
+    
+    #address {
+        float: clear;
+        width: 100%;
+    }
+    footer {
+        height: auto;
+    }
+    footer > aside {
+        float: left;
+        padding-top: 10px;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+    
+}
+
+/************
+
+            ANIMATED HAMBURGER, FRIES, AND DRINK
+
+*************/
+
+#nav-toggle { 
+    position: absolute; 
+    right: 32pt; 
+    top: 45pt; 
+}
+#nav-toggle { 
+    cursor: pointer; 
+    padding: 10px 35px 16px 0px; 
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: black;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+#nav-toggle span:before {
+    top: -10px; 
+}
+#nav-toggle span:after {
+    bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+    transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+    background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
